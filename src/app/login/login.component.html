@@ -1,0 +1,18 @@
+<h2 class="">{{data}}</h2>
+
+<div class="row w-100  ">
+<div class="col-lg-6 col-md-6 col-sm-6 main ms-5 border border-5 text-center text-white p-2 ">
+    <h1 class="text-center">Login Form</h1>
+
+    <label  for="a1">Account Number</label> <br>
+    <input (change)="acnochange($event)" type="text" id="a1" [placeholder]="pdata" class="mt-2 w-75"><br><br>
+    <label  for="a2">Password</label><br>
+    <input type="password" id="a2" placeholder="Password" class="mt-2 w-75"> <br> <br>
+    <button (click)="login()"  class="btn btn-success">Login</button>  <br>
+    <a routerLink="register" class="text-white"><strong>  Create New Account </strong></a>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 bdy sub">
+    <img  src="https://i.postimg.cc/qvbqm7MX/Bank-building-banking-investment-wealth-growth-vector-image-on-Vector-Stock.jpg" alt="">
+
+</div>
+</div>

@@ -1,0 +1,12 @@
+div{
+    transition:2s ease-in-out ;
+}
+div:hover{
+    scale:1.2 ;
+}
+button{
+    transition:2s ease-in-out ;
+}
+button:hover{
+    scale: 1.3;
+}
