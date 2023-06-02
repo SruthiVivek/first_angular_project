@@ -1,10 +1,10 @@
 <div class=" main w-50 container text-center border border-5 mt-5 p-2 ">
         <h1 class="text-center">Create New Account</h1>
-    <input  type="text" id="b1" placeholder="Account Number" class="mt-2 w-75"><br><br>
-    <input  type="text" id="b2" placeholder="User Name" class="mt-2 w-75"><br><br>
-     <input type="password" id="b3" placeholder="Password" class="mt-2 w-75"> <br> <br>
-    <input type="password" id="b4" placeholder="Conform Password" class="mt-2 w-75"> <br> <br>
-    <button  type="submit" class="btn btn-success">Create</button>  <br>
+    <input [(ngModel)]="acno" type="text" id="b1" name="acno" placeholder="Account Number" class="mt-2 w-75"><br><br>
+    <input [(ngModel)]="uname" type="text" id="b2" name="uname" placeholder="User Name" class="mt-2 w-75"><br><br>
+     <input [(ngModel)]="psw" type="password" id="b3" name="password" placeholder="Password" class="mt-2 w-75"> <br> <br>
+    <input [(ngModel)]="cpsw" type="password" id="b4" name="cpassword" placeholder="Conform Password" class="mt-2 w-75"> <br> <br>
+    <button (click)="signup()" type="submit" class="btn btn-success">Create</button>  <br>
     </div>
 
 

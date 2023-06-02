@@ -1,4 +1,14 @@
 img{
+    margin-top:50px ;
     height:50vh ;
-    
+}
+img:hover{
+    scale:1.2 ;
+}
+
+button{
+    background-color: darkblue;
+    color: white;
+    height: 70px;
+    font-size: 18px;
 }
