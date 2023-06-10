@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DataService } from '../DataService';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -10,6 +12,7 @@ export class RegisterComponent {
   uname:any
   psw:any
   cpsw:any
+  constructor(private ds:DataService,private router:Router){}
 
   signup(){
     var acno=this.acno
@@ -17,12 +20,20 @@ export class RegisterComponent {
     var psw=this.psw
     var cpsw=this.cpsw
 
-   console.log(acno);
-   console.log(uname);
-   console.log(psw);
-   console.log(cpsw);
    
-   
+   if(psw==cpsw){
+          this.ds.register(acno,uname,psw).subscribe((result:any)=>{
+            alert(result.message)
+            this.router.navigateByUrl('')
+          },
+          result=>{
+            alert(result.error.message)
+          }
+          )
+   }
+   else{
+    alert("possword doestnt match")
+   }
    
    
   }

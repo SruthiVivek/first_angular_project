@@ -5,9 +5,9 @@
     <h1 class="text-center">Login Form</h1>
 
     <label  for="a1">Account Number</label> <br>
-    <input (change)="acnochange($event)" type="text" id="a1" [placeholder]="pdata" class="mt-2 w-75"><br><br>
+    <input [(ngModel)]="acno" type="text" id="a1" [placeholder]="pdata" class="mt-2 w-75"><br><br>
     <label  for="a2">Password</label><br>
-    <input type="password" id="a2" placeholder="Password" class="mt-2 w-75"> <br> <br>
+    <input [(ngModel)]="psw" type="password" id="a2" placeholder="Password" class="mt-2 w-75"> <br> <br>
     <button (click)="login()"  class="btn btn-success">Login</button>  <br>
     <a routerLink="register" class="text-white"><strong>  Create New Account </strong></a>
 </div>
